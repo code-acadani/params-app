@@ -11,5 +11,8 @@ Rails.application.routes.draw do
 		# url segment params
 		get "/segment_params_url/:tacocat" => "params_examples#segment_params_method"
 		get "/guess_segment_url/:user_guess" => "params_examples#guess_game_method"
+
+		# body params
+		post "/body_params_url" => "params_examples#body_params_method"
   end
 end

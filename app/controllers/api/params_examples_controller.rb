@@ -36,7 +36,38 @@ class Api::ParamsExamplesController < ApplicationController
 		render 'segment_params.json.jbuilder'
 	end
 
+	def body_params_method
+		input_value = params["password"]
+		@message = "The password is #{input_value}"
+		render 'body_params.json.jbuilder'
+	end
+
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
